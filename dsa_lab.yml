@@ -1,0 +1,64 @@
+name: dsa-lab
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python and core tools
+  - python=3.12
+  - pip
+  - ipykernel
+  - jupyterlab
+  - tqdm
+
+  # Data Science & Analytics
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - openpyxl
+  - xlrd
+  - pandas-datareader   # financial/economic data
+  - pyarrow              # Parquet, Arrow integration
+  - feather-format
+
+  # Data Engineering & Big Data
+  - sqlalchemy
+  - psycopg2
+  - mysqlclient
+  - dask
+  - pyspark
+  - h5py
+  - alembic              # database migrations
+  - boto3                # AWS SDK (for S3, etc.)
+
+  # Web Scraping & API Development
+  - requests
+  - beautifulsoup4
+  - lxml
+  - regex
+  - scrapy
+  - selenium
+  - fastapi
+  - uvicorn
+
+  # Web Development & Dashboarding
+  - flask
+  - django
+  - plotly
+  - dash
+  - streamlit            # via pip (more up-to-date)
+  - ydata-profiling      # modern pandas-profiling replacement
+
+  # Workflow & Utilities
+  - nltk
+  - apache-airflow       # via pip (conda version often lags)
+  - pre-commit
+  - black
+  - pytest
+
+  - pip:
+    - apache-airflow     # ensures latest version
+    - streamlit          # dashboarding (optional, if conda version is old)
