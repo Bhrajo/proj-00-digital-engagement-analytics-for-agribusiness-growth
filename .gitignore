@@ -1,13 +1,25 @@
-# Jupyter
-.ipynb_checkpoints/
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Outputs (generated files)
-# outputs/**
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
 
-# Environment
+# Environments and Secrets
 .env
-.DS_Store
+.venv
+env/
+venv/
+.envrc
+
+# Data sets (Ignore raw and processed data, keep samples and documentation)
+data/*.csv
+data/*.parquet
+!data/sample_*.csv
+!data/README.md
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints

@@ -168,41 +168,20 @@ Agribusiness marketers should prioritize strengthening these predictive factors 
 
 ```
 Proj-00-digital-engagement-analytics-for-agribusiness-growth
+This repository follows industry-standard data science organization:
 
-|── data
-  ── Cleaned_Agribusiness_Social_Media_Marketing.csv
-  ── Engineered_Features.csv
-  ── (processed datasets used for modeling)
-
-|── notebooks
-  ── Enhancing_Digital_Engagement_for_Agribusiness_Growth.ipynb
-  ── Enhancing_Digital_Engagement_for_Agribusiness_Growth.html
-  ── Enhancing_Digital_Engagement_for_Agribusiness_Growth.pdf
-
-|── outputs
-  |── 01-data-preprocessing-and-validation
-   ── README.md
-   ── (validation visualizations)
- 
-  |── 02-exploratory-data-analysis
-   ── README.md
-   ── (EDA visualizations)
- 
-  |── 03-modeling-and-predictions
-   ── README.md
-   ── (model performance & prediction visualizations)
-
-|── environment.yml
- ── requirements.txt
- ── README.md
- ── LICENSE
- ── .gitignore
-
+├── data/               # Raw, cleaned, and engineered datasets (ignored in git)
+├── docs/               # Project reports and presentations
+├── notebooks/          # Jupyter notebooks for interactive EDA and modeling
+├── outputs/            # Generated visual assets and model evaluation plots
+│   ├── 01-data-preprocessing-and-validation/
+│   ├── 02-exploratory-data-analysis/
+│   └── 03-modeling-and-predictions/
+├── src/                # Modular, reusable Python scripts
+│   ├── data/           # Data loading and cleaning scripts
+│   ├── features/       # Feature engineering logic
+│   ├── models/         # Model training and prediction scripts
+│   └── visualization/  # Code to generate plots
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
 ```
-
-### Structure Overview
-
-- **data/** – Contains cleaned and engineered datasets used in modeling and analysis.
-- **notebooks/** – Contains the primary analytical notebook and exported versions for review.
-- **outputs/** – Stores categorized visual results aligned with each stage of the analytical pipeline.
-- **environment.yml** and **requirements.txt** – Ensure full reproducibility of the computational environment.
